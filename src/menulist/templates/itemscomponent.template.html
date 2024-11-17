@@ -1,0 +1,13 @@
+<h2>Category Details:</h2>
+<table class="table table-hover table-bordered">
+  <th class="table-primary"> Item Name </th>
+  <th class="table-primary"> Item Short Name</th>
+  <th class="table-primary"> Item Description</th>
+  <th class="table-primary"> Item Price</th>
+  <tr ng-repeat="categoriesItem in $ctrl.items">
+    <td>{{ categoriesItem.name }}</td>
+    <td>{{ categoriesItem.short_name }}</td>
+    <td>{{ categoriesItem.description }}</td>
+    <td>{{ categoriesItem.price_large | currency }}</td>
+  </tr>
+</table>
